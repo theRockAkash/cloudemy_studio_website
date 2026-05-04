@@ -1,0 +1,85 @@
+/* ===== PAGE HEADER BANNER ===== */
+.page-header {
+    background: var(--color-dark);
+    padding: 140px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+.page-header-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.page-header-glow {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.06;
+    filter: blur(80px);
+}
+.page-header-glow-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--color-pink);
+    top: -80px;
+    right: 5%;
+}
+.page-header-glow-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--color-coral);
+    bottom: -60px;
+    left: 10%;
+}
+.page-header .container {
+    position: relative;
+    z-index: 2;
+}
+.page-header .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 16px;
+}
+.page-header .breadcrumb a {
+    color: rgba(255,255,255,0.35);
+    transition: color var(--transition);
+}
+.page-header .breadcrumb a:hover {
+    color: var(--color-white);
+}
+.page-header .breadcrumb svg {
+    width: 14px;
+    height: 14px;
+    opacity: 0.4;
+}
+.page-header h1 {
+    color: var(--color-white);
+    margin-bottom: 12px;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+.page-header p {
+    color: rgba(255,255,255,0.45);
+    font-size: 1.05rem;
+    max-width: 560px;
+    line-height: 1.7;
+}
+
+/* ===== INNER PAGE SECTIONS ===== */
+.inner-section {
+    padding: var(--section-pad) 0;
+}
+.inner-section-alt {
+    padding: var(--section-pad) 0;
+    background: var(--color-off-white);
+}
+
+@media (max-width: 640px) {
+    .page-header { padding: 110px 0 40px; }
+    .page-header h1 { font-size: 1.5rem; }
+}
